@@ -117,7 +117,7 @@ function NavLink({ link, handleMouseEnter, handleMouseLeave }) {
   });
 
   if (link.url.startsWith("http")) {
-    return <Anchor href={link.url} target="_blank" />;
+    return <Anchor href={link.url} target="_blank" rel="noopener noreferrer" />;
   }
 
   return (
